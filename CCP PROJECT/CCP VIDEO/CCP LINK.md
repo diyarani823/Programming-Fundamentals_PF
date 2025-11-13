@@ -1,4 +1,0 @@
-# Programming-Fundamentals\_PF
-
-🎥 \[Watch CCP Project Presentation Video on YouTube](https://www.youtube.com/watch?v=\_LgAfosV3W0)
-
