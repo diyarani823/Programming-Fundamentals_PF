@@ -1,28 +1,41 @@
 #include <stdio.h>
 int main()
 {
-int n,i;
-float sum=0, count =0;
-printf("enter input num");
+int m,n,i,j,countzero=0;
+printf("enter num of rows");
+scanf("%d",&m);
+printf("enter num of cols");
 scanf("%d",&n);
-int arr[n];
-printf("enter %d numbers\n",n);
-for(i=0;i<n;i++)
+int matrix[m][n];
+printf("enter elements of matrix");
+for(i=0;i<m;i++)
 {
-	scanf("%d",&arr[i]);
-	if(arr[i]>0)
-	sum+=arr[i];
-	count++;
+	for(j=0;j<n;j++)
+	{
+		scanf("%d",&matrix[i][j]);
+		if (matrix[i][j]==0)
+		{
+			countzero++;
+		}
+	}
 }
-printf("sum of all +Ve nuum %f ",sum);
-if (count>0)
+printf("the entered matrix is\n");
+for (i=0;i<m;i++){
+	for(j=0;j<n;j++)
+	{
+		printf("%d ",matrix[i][j]);
+	}
+	printf("\n");
+}
+if (countzero>=m*n/2)
 {
-	float avg=sum/count;
-	printf("avg posive num %f",avg);
+	printf("the matrix is sparse");
 }
-else {
-	printf("not possible");
+else
+{
+	printf("the matrix is not sparse");
 }
 return 0;
 }
+
 
