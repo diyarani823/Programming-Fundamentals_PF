@@ -40,7 +40,7 @@ int main()//execution starts here
         scanf(" %c", &guess);//saves input letter in guess
 
         
-        if (guess >= 'A' && guess <= 'Z') 
+        if (guess <= 'A' && guess >= 'Z') 
 		{
             guess = guess + 32; //convert uppercase to lowercase manually
         }
