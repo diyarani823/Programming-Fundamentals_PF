@@ -2,9 +2,9 @@
 
 int main() {
     int i, j;
-    for (i = 0; i < 4; i++) {
+    for (i = 0; i < 5; i++) {
         for (j = 0; j < 3; j++) {
-            if (i == 2 && j == 1) {
+            if (i == 6 && j == 7) {
                 break;
             }
         }
