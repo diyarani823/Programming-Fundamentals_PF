@@ -15,7 +15,7 @@ if(a!=0)
 	if(discriminant>0){
 		root1=(-b+sqrt(discriminant))/(2*a);
 				root2=(-b-sqrt(discriminant)/2*a);
-				printf("root 1 is %d and root 2 is %f",root1,root2);
+				printf("root 1 is %f and root 2 is %f",root1,root2);
 
 	}
 	else if(discriminant==0)
